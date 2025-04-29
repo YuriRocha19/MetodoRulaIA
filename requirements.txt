@@ -1,0 +1,6 @@
+streamlit>=1.32.0
+opencv-python
+numpy
+mediapipe==0.10.14
+google-generativeai
+Pillow
