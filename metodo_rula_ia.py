@@ -3,9 +3,10 @@ import google.generativeai as genai
 import mediapipe as mp
 import cv2
 import numpy as np
+import os
 
 # Configurar a API Key do Gemini
-genai.configure(api_key="AIzaSyChBneA6K8PP1SIKprPXEUmnygI1X0OKw0")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 st.title("Assistente de Ergonomia - Análise RULA")
 
