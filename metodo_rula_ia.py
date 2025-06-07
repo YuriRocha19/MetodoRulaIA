@@ -120,9 +120,10 @@ Você é um especialista em ergonomia. Baseado na imagem analisada, os ângulos 
 - Braço: {ang_braco}° (RULA {r_braco})
 
 Explique:
-1. Qual segmento está em pior posição.
-2. Justifique a nota RULA com base nos ângulos.
-3. Sugira ajustes ergonômicos para a postura detectada.
+1. Estime os ângulos dos segmentos (braço, antebraço, tronco, pescoço).
+2. Use as regras da tabela RULA para estimar a pontuação final.
+3. Diga qual segmento está em pior posição.
+4. Dê ao menos uma sugestão de ajuste postural ou ambiental.
 """
             model = genai.GenerativeModel('gemini-1.5-flash')
             response = model.generate_content(prompt)
